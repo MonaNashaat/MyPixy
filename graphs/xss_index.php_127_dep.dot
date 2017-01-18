@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_127_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\about.php : 159\nVar: _t1_731\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\about.php : 161\nunresolved function:\n__\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\about.php : 161\nLit: Content endpoints provide machine-readable external access to your WordPress site with a clear, standards-driven interface, paving the way for new and innovative methods of interacting with sites through plugins, themes, apps, and beyond. Ready to get started with development? <a href=\"%s\">Check out the REST API reference.</a>\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+}

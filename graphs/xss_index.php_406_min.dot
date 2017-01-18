@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_406_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\nav-menus.php : 627\nVar: $_location\nFunc: _main\n",style=filled];
+}

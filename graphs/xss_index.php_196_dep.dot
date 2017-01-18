@@ -1,0 +1,23 @@
+digraph cfg {
+  label="xss_index.php_196_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\edit-comments.php : 213\nVar: _t2_712\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\edit-comments.php : 214\nunresolved function:\nwp_html_excerpt\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\edit-comments.php : 214\nVar: _t3_712\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\edit-comments.php : 214\nunresolved function:\nesc_html\n(unmodeled)\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\edit-comments.php : 214\nVar: _t4_712\nFunc: _main\n"];
+  n6 [shape=ellipse, label="D:\wordpress\wp-admin\edit-comments.php : 214\nunresolved function:\nwp_unslash\n(unmodeled)\n"];
+  n7 [shape=box, label="D:\wordpress\wp-admin\edit-comments.php : 214\nVar: $_REQUEST[s]\nFunc: _superglobals\n"];
+  n8 [shape=box, label="<uninit>"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\edit-comments.php : 214\nLit: 50\n"];
+  n10 [shape=box, label="D:\wordpress\wp-admin\edit-comments.php : 214\nLit: &hellip;\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n5 -> n6;
+  n7 -> n8;
+  n6 -> n7[label="Param #1"];
+  n4 -> n5[label="Param #1"];
+  n2 -> n3[label="Param #1"];
+  n2 -> n9[label="Param #2"];
+  n2 -> n10[label="Param #3"];
+}

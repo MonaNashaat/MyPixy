@@ -1,0 +1,15 @@
+digraph cfg {
+  label="xss_index.php_20_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\media-new.php : 68\nVar: _t0_707\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\media-new.php : 68\nunresolved function:\nesc_html\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\media-new.php : 68\nVar: $title\nFunc: _main\n"];
+  n4 [shape=box, label="D:\wordpress\wp-admin\media-new.php : 40\nVar: _t0_707\nFunc: _main\n"];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\media-new.php : 40\nunresolved function:\n__\n(unmodeled)\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\media-new.php : 40\nLit: Upload New Media\n"];
+  n1 -> n2;
+  n4 -> n5;
+  n5 -> n6[label="Param #1"];
+  n3 -> n4;
+  n2 -> n3[label="Param #1"];
+}

@@ -1,0 +1,11 @@
+digraph cfg {
+  label="xss_index.php_136_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\network\site-themes.php : 171\nVar: $title\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\network\site-themes.php : 163\nbuiltin function:\nsprintf\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\network\site-themes.php : 163\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\network\site-themes.php : 163\nunresolved function:\nesc_html\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n2 -> n4;
+}

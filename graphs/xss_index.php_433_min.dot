@@ -1,0 +1,11 @@
+digraph cfg {
+  label="xss_index.php_433_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\nav-menus.php : 773\nVar: $starter_copy\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 771\nVar: _t0_716\nFunc: _main\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 771\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 771\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n2 -> n4;
+}

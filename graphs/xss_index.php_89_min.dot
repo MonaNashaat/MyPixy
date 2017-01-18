@@ -1,0 +1,15 @@
+digraph cfg {
+  label="xss_index.php_89_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\install.php : 111\nVar: $error\nFunc: display_setup_form\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\install.php : 354\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\install.php : 359\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\install.php : 350\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\install.php : 369\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n6 [shape=ellipse, label="D:\wordpress\wp-admin\install.php : 364\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n1 -> n3;
+  n1 -> n4;
+  n1 -> n5;
+  n1 -> n6;
+}

@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_358_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugins.php : 427\nLit: <div id=\"message\" class=\"error\"><p>\n"];
+}

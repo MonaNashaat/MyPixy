@@ -1,0 +1,19 @@
+digraph cfg {
+  label="xss_index.php_433_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\nav-menus.php : 773\nVar: $starter_copy\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 771\nVar: _t0_716\nFunc: _main\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 771\nVar: _t1_716\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 771\nunresolved function:\n__\n(unmodeled)\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 771\nLit: Edit your default menu by adding or removing items. Drag each item into the order you prefer. Click Create Menu to save your changes.\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 771\nVar: _t2_716\nFunc: _main\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 771\nunresolved function:\n__\n(unmodeled)\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 771\nLit: Drag each item into the order you prefer. Click the arrow on the right of the item to reveal additional configuration options.\n"];
+  n3 -> n4;
+  n4 -> n5[label="Param #1"];
+  n2 -> n3;
+  n2 -> n6;
+  n6 -> n7;
+  n7 -> n8[label="Param #1"];
+  n1 -> n2;
+}

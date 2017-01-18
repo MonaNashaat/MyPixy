@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_332_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\edit.php : 352\nVar: $post_type\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\edit.php : 31\nVar: $typenow\nFunc: _main\n"];
+  n3 [shape=box, label="<uninit>"];
+  n2 -> n3;
+  n1 -> n2;
+}

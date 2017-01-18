@@ -1,0 +1,29 @@
+digraph cfg {
+  label="xss_index.php_324_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugins.php : 326\nVar: _t2_725\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 326\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 326\nVar: _t2_725\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 326\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 326\nLit: <input type=\"hidden\" name=\"checked[]\" value=\"\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 326\nVar: _t2_725\nFunc: _main\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 326\nunresolved function:\nesc_attr\n(unmodeled)\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 326\nVar: $plugin\nFunc: _main\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 20\nVar: _t0_725\nFunc: _main\n"];
+  n10 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 20\nLit: \n"];
+  n11 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 20\nVar: $_REQUEST[plugin]\nFunc: _superglobals\n"];
+  n12 [shape=box, label="<uninit>"];
+  n13 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 326\nLit: \" />\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n4 -> n5[label="Param #1"];
+  n4 -> n6[label="Param #2"];
+  n6 -> n7;
+  n9 -> n10;
+  n9 -> n11;
+  n11 -> n12;
+  n8 -> n9;
+  n7 -> n8[label="Param #1"];
+  n2 -> n3[label="Param #1"];
+  n2 -> n13[label="Param #2"];
+}

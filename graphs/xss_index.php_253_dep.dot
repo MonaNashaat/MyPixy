@@ -1,0 +1,13 @@
+digraph cfg {
+  label="xss_index.php_253_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugin-editor.php : 275\nVar: _t0_728\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 275\nbuiltin function:\nurlencode\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\plugin-editor.php : 275\nVar: _t1_728\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 275\nunresolved function:\nget_bloginfo\n(unmodeled)\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\plugin-editor.php : 275\nLit: version\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n4 -> n5[label="Param #1"];
+  n2 -> n3[label="Param #1"];
+}

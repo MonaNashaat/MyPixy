@@ -1,0 +1,15 @@
+digraph cfg {
+  label="xss_index.php_221_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\edit-comments.php : 233\nVar: _t0_712\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\edit-comments.php : 233\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\edit-comments.php : 233\nbuiltin function:\n.\n"];
+  n4 [shape=box, label="D:\wordpress\wp-admin\edit-comments.php : 233\nVar: $error_msg\nFunc: _main\n"];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\edit-comments.php : 229\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n6 [shape=ellipse, label="D:\wordpress\wp-admin\edit-comments.php : 226\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n4 -> n5;
+  n4 -> n6;
+}

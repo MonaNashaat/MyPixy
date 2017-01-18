@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_359_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugins.php : 428\nVar: _t2_725\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 430\nunresolved function:\n__\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 430\nLit: The plugin %1$s has been <strong>deactivated</strong> due to an error: %2$s\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+}

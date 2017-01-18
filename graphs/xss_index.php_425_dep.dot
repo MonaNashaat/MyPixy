@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_425_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\nav-menus.php : 707\nVar: _t4_716\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 709\nLit:  &hellip;\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 709\nLit: \n"];
+  n1 -> n2;
+  n1 -> n3;
+}

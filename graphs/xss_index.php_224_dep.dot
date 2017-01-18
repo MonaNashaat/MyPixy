@@ -1,0 +1,13 @@
+digraph cfg {
+  label="xss_index.php_224_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\network\settings.php : 240\nVar: _t0_708\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 240\nunresolved function:\nesc_textarea\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\network\settings.php : 240\nVar: _t1_708\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 240\nunresolved function:\nget_site_option\n(unmodeled)\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\network\settings.php : 240\nLit: first_page\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n4 -> n5[label="Param #1"];
+  n2 -> n3[label="Param #1"];
+}

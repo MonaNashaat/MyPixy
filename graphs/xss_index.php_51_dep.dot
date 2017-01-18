@@ -1,0 +1,15 @@
+digraph cfg {
+  label="xss_index.php_51_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\link-manager.php : 85\nVar: _t2_706\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\link-manager.php : 85\nunresolved function:\nesc_html\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\link-manager.php : 85\nVar: _t3_706\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\link-manager.php : 85\nunresolved function:\nwp_unslash\n(unmodeled)\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\link-manager.php : 85\nVar: $_REQUEST[s]\nFunc: _superglobals\n"];
+  n6 [shape=box, label="<uninit>"];
+  n1 -> n2;
+  n3 -> n4;
+  n5 -> n6;
+  n4 -> n5[label="Param #1"];
+  n2 -> n3[label="Param #1"];
+}

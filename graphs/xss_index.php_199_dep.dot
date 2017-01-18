@@ -1,0 +1,30 @@
+digraph cfg {
+  label="xss_index.php_199_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\options-permalink.php : 216\nVar: _t2_721\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\options-permalink.php : 216\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 216\nVar: _t2_721\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\options-permalink.php : 216\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 216\nVar: _t2_721\nFunc: _main\n"];
+  n6 [shape=ellipse, label="D:\wordpress\wp-admin\options-permalink.php : 216\nunresolved function:\nget_option\n(unmodeled)\n"];
+  n7 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 216\nLit: home\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 216\nVar: $blog_prefix\nFunc: _main\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 55\nLit: \n"];
+  n10 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 66\nLit: /blog\n"];
+  n11 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 216\nVar: $prefix\nFunc: _main\n"];
+  n12 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 57\nLit: /index.php\n"];
+  n13 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 55\nVar: $blog_prefix\nFunc: _main\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n5 -> n6;
+  n6 -> n7[label="Param #1"];
+  n4 -> n5[label="Param #1"];
+  n4 -> n8[label="Param #2"];
+  n8 -> n9;
+  n8 -> n10;
+  n2 -> n3[label="Param #1"];
+  n2 -> n11[label="Param #2"];
+  n11 -> n12;
+  n11 -> n13;
+  n13 -> n9;
+}

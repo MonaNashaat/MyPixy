@@ -1,0 +1,21 @@
+digraph cfg {
+  label="xss_index.php_179_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\network\site-new.php : 205\nVar: _t0_715\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\network\site-new.php : 205\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\network\site-new.php : 205\nVar: _t0_715\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\network\site-new.php : 205\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\network\site-new.php : 205\nLit: <p class=\"description\" id=\"site-address-desc\">\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\network\site-new.php : 205\nVar: _t0_715\nFunc: _main\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\network\site-new.php : 205\nunresolved function:\n__\n(unmodeled)\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\network\site-new.php : 205\nLit: Only lowercase letters (a-z), numbers, and hyphens are allowed.\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\network\site-new.php : 205\nLit: </p>\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n4 -> n5[label="Param #1"];
+  n4 -> n6[label="Param #2"];
+  n6 -> n7;
+  n7 -> n8[label="Param #1"];
+  n2 -> n3[label="Param #1"];
+  n2 -> n9[label="Param #2"];
+}

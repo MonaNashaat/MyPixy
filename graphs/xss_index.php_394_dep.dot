@@ -1,0 +1,13 @@
+digraph cfg {
+  label="xss_index.php_394_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\nav-menus.php : 579\nVar: _t0_716\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 579\nunresolved function:\nesc_html\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 579\nVar: _t1_716\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 579\nunresolved function:\n__\n(unmodeled)\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 579\nLit: Menus\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n4 -> n5[label="Param #1"];
+  n2 -> n3[label="Param #1"];
+}

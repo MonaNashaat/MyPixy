@@ -1,0 +1,21 @@
+digraph cfg {
+  label="codeEval_index.php_5_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\options-permalink.php : 85\nVar: _t1_721\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\options-permalink.php : 85\nunresolved function:\nextract_from_markers\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 85\nVar: _t2_721\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\options-permalink.php : 85\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 85\nVar: $home_path\nFunc: _main\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 51\nVar: _t0_721\nFunc: _main\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\options-permalink.php : 51\nunresolved function:\nget_home_path\n(unmodeled)\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 85\nLit: .htaccess\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 85\nLit: WordPress\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n6 -> n7;
+  n5 -> n6;
+  n4 -> n5[label="Param #1"];
+  n4 -> n8[label="Param #2"];
+  n2 -> n3[label="Param #1"];
+  n2 -> n9[label="Param #2"];
+}

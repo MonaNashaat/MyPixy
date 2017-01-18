@@ -1,0 +1,37 @@
+digraph cfg {
+  label="xss_index.php_117_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\comment.php : 145\nVar: _t0_711\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 145\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\comment.php : 145\nVar: _t0_711\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 145\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\comment.php : 145\nLit: <div id=\"message\" class=\"notice notice-info\"><p>\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\comment.php : 145\nVar: $message\nFunc: _main\n"];
+  n7 [shape=box, label="D:\wordpress\wp-admin\comment.php : 138\nVar: _t1_711\nFunc: _main\n"];
+  n8 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 138\nunresolved function:\n__\n(unmodeled)\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\comment.php : 138\nLit: This comment is currently marked as spam.\n"];
+  n10 [shape=box, label="D:\wordpress\wp-admin\comment.php : 132\nLit: \n"];
+  n11 [shape=box, label="D:\wordpress\wp-admin\comment.php : 141\nVar: _t1_711\nFunc: _main\n"];
+  n12 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 141\nunresolved function:\n__\n(unmodeled)\n"];
+  n13 [shape=box, label="D:\wordpress\wp-admin\comment.php : 141\nLit: This comment is currently in the Trash.\n"];
+  n14 [shape=box, label="D:\wordpress\wp-admin\comment.php : 135\nVar: _t1_711\nFunc: _main\n"];
+  n15 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 135\nunresolved function:\n__\n(unmodeled)\n"];
+  n16 [shape=box, label="D:\wordpress\wp-admin\comment.php : 135\nLit: This comment is currently approved.\n"];
+  n17 [shape=box, label="D:\wordpress\wp-admin\comment.php : 145\nLit: </p></div>\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n4 -> n5[label="Param #1"];
+  n4 -> n6[label="Param #2"];
+  n7 -> n8;
+  n8 -> n9[label="Param #1"];
+  n6 -> n7;
+  n6 -> n10;
+  n6 -> n11;
+  n6 -> n14;
+  n11 -> n12;
+  n12 -> n13[label="Param #1"];
+  n14 -> n15;
+  n15 -> n16[label="Param #1"];
+  n2 -> n3[label="Param #1"];
+  n2 -> n17[label="Param #2"];
+}

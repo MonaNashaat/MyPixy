@@ -1,0 +1,15 @@
+digraph cfg {
+  label="xss_index.php_317_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\edit-comments.php : 314\nVar: _t0_712\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\edit-comments.php : 314\nunresolved function:\nesc_attr\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\edit-comments.php : 314\nVar: _t1_712\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\edit-comments.php : 314\nunresolved function:\nabsint\n(unmodeled)\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\edit-comments.php : 314\nVar: $_REQUEST[paged]\nFunc: _superglobals\n"];
+  n6 [shape=box, label="<uninit>"];
+  n1 -> n2;
+  n3 -> n4;
+  n5 -> n6;
+  n4 -> n5[label="Param #1"];
+  n2 -> n3[label="Param #1"];
+}

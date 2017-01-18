@@ -1,0 +1,17 @@
+digraph cfg {
+  label="xss_index.php_342_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\setup-config.php : 372\nVar: $install\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\setup-config.php : 242\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\setup-config.php : 242\nbuiltin function:\n.\n"];
+  n4 [shape=box, label="D:\wordpress\wp-admin\setup-config.php : 242\nVar: $language\nFunc: _main\n"];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\setup-config.php : 108\nbuiltin function:\npreg_replace\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\setup-config.php : 108\nVar: $_REQUEST[language]\nFunc: _superglobals\n",style=filled];
+  n7 [shape=box, label="D:\wordpress\wp-admin\setup-config.php : 110\nVar: $wp_local_package\nFunc: _main\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n4 -> n5;
+  n4 -> n7;
+  n5 -> n6;
+}

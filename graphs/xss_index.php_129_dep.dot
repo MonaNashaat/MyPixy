@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_129_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\setup-config.php : 161\nVar: _t1_726\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\setup-config.php : 161\nunresolved function:\n__\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\setup-config.php : 161\nLit: If for any reason this automatic file creation doesn&#8217;t work, don&#8217;t worry. All this does is fill in the database information to a configuration file. You may also simply open %1$s in a text editor, fill in your information, and save it as %2$s.\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+}

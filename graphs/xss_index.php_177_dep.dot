@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_177_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\about.php : 203\nLit: https://make.wordpress.org/core/2016/09/08/wp_hook-next-generation-actions-and-filters/\n"];
+}

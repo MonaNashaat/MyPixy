@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_119_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-activate.php : 150\nVar: _t1_729\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-activate.php : 150\nunresolved function:\n__\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-activate.php : 150\nLit: Your account is now activated. <a href=\"%1$s\">Log in</a> or go back to the <a href=\"%2$s\">homepage</a>.\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+}

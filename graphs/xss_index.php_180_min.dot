@@ -1,0 +1,25 @@
+digraph cfg {
+  label="xss_index.php_180_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\comment.php : 205\nVar: _t0_711\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 205\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 205\nbuiltin function:\n.\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 205\nbuiltin function:\n.\n"];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 205\nbuiltin function:\n.\n"];
+  n6 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 205\nunresolved function:\nesc_url\n(unmodeled)\n",style=filled];
+  n7 [shape=box, label="D:\wordpress\wp-admin\comment.php : 205\nVar: $submitted\nFunc: _main\n"];
+  n8 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 199\nbuiltin function:\nsprintf\n"];
+  n9 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 199\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n10 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 201\nunresolved function:\nget_comment_date\n(unmodeled)\n",style=filled];
+  n11 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 202\nunresolved function:\nget_comment_date\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n3 -> n7;
+  n4 -> n5;
+  n5 -> n6;
+  n7 -> n8;
+  n8 -> n9;
+  n8 -> n10;
+  n8 -> n11;
+}

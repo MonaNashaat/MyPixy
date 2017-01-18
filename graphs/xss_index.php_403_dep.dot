@@ -1,0 +1,21 @@
+digraph cfg {
+  label="xss_index.php_403_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\nav-menus.php : 610\nVar: _t0_716\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 610\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 610\nVar: _t0_716\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 610\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 610\nLit: <p>\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 610\nVar: _t0_716\nFunc: _main\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 610\nunresolved function:\n__\n(unmodeled)\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 610\nLit: Your theme supports one menu. Select which menu you would like to use.\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 610\nLit: </p>\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n4 -> n5[label="Param #1"];
+  n4 -> n6[label="Param #2"];
+  n6 -> n7;
+  n7 -> n8[label="Param #1"];
+  n2 -> n3[label="Param #1"];
+  n2 -> n9[label="Param #2"];
+}

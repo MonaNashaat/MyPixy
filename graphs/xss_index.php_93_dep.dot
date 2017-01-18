@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_93_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\setup-config.php : 117\nLit: <h1 class=\"screen-reader-text\">Select a default language</h1>\n"];
+}

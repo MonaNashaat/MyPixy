@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_186_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\setup-config.php : 208\nVar: _t1_726\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\setup-config.php : 208\nunresolved function:\n__\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\setup-config.php : 208\nLit: You should be able to get this info from your web host, if %s doesn&#8217;t work.\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+}

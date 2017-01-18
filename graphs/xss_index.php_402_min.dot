@@ -1,0 +1,19 @@
+digraph cfg {
+  label="xss_index.php_402_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\nav-menus.php : 604\nVar: _t1_716\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 604\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 604\nVar: $message\nFunc: _main\n",style=filled];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\users.php : 440\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\users.php : 442\nunresolved function:\n_n\n(unmodeled)\n",style=filled];
+  n6 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 138\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 141\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n8 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 135\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n3 -> n5;
+  n3 -> n6;
+  n3 -> n7;
+  n3 -> n8;
+}

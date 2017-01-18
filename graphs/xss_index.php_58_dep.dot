@@ -1,0 +1,21 @@
+digraph cfg {
+  label="xss_index.php_58_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\link-manager.php : 94\nVar: _t1_706\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\link-manager.php : 94\nunresolved function:\n_n\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\link-manager.php : 94\nLit: %s link deleted.\n"];
+  n4 [shape=box, label="D:\wordpress\wp-admin\link-manager.php : 94\nLit: %s links deleted\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\link-manager.php : 94\nVar: $deleted\nFunc: _main\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\link-manager.php : 93\nVar: _t0_706\nFunc: _main\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\link-manager.php : 93\nbuiltin function:\n(int)\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\link-manager.php : 93\nVar: $_REQUEST[deleted]\nFunc: _superglobals\n"];
+  n9 [shape=box, label="<uninit>"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+  n2 -> n4[label="Param #2"];
+  n2 -> n5[label="Param #3"];
+  n6 -> n7;
+  n8 -> n9;
+  n7 -> n8[label="Param #1"];
+  n5 -> n6;
+}

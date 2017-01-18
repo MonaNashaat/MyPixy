@@ -1,0 +1,7 @@
+digraph cfg {
+  label="xss_index.php_75_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\setup-config.php : 102\nVar: _t1_726\nFunc: setup_config_display_header\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\setup-config.php : 102\nunresolved function:\nesc_url\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+}

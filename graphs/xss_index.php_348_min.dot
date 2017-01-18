@@ -1,0 +1,23 @@
+digraph cfg {
+  label="xss_index.php_348_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\network\settings.php : 384\nVar: _t2_708\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 384\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 384\nbuiltin function:\n.\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 384\nbuiltin function:\n.\n"];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 384\nbuiltin function:\n.\n"];
+  n6 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 384\nbuiltin function:\n.\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 384\nbuiltin function:\n.\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\network\settings.php : 384\nVar: $key\nFunc: _main\n",style=filled];
+  n9 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 384\nunresolved function:\nchecked\n(unmodeled)\n",style=filled];
+  n10 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 384\nunresolved function:\nesc_html\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n3 -> n10;
+  n4 -> n5;
+  n5 -> n6;
+  n5 -> n9;
+  n6 -> n7;
+  n7 -> n8;
+}

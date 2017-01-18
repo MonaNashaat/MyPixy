@@ -1,0 +1,7 @@
+digraph cfg {
+  label="xss_index.php_39_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\admin-header.php : 81\nVar: $current_screen\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\admin-header.php : 25\nVar: $current_screen\nFunc: _main\n",style=filled];
+  n1 -> n2;
+}

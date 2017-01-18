@@ -1,0 +1,11 @@
+digraph cfg {
+  label="xss_index.php_77_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\network\sites.php : 104\nVar: _t0_718\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\network\sites.php : 104\nunresolved function:\nesc_attr\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\network\sites.php : 104\nVar: _t1_718\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\network\sites.php : 104\nunresolved function:\nwp_get_referer\n(unmodeled)\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n2 -> n3[label="Param #1"];
+}

@@ -1,0 +1,28 @@
+digraph cfg {
+  label="xss_index.php_31_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\install.php : 79\nVar: $body_classes\nFunc: display_header\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\install.php : 293\nLit: language-chooser\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\install.php : 58\nLit: \n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\install.php : 61\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\install.php : 61\nVar: $body_classes\nFunc: display_header\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\install.php : 61\nLit: rtl\n"];
+  n7 [shape=box, label="D:\wordpress\wp-admin\install.php : 64\nVar: _t0_705\nFunc: display_header\n"];
+  n8 [shape=ellipse, label="D:\wordpress\wp-admin\install.php : 64\nbuiltin function:\n.\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\install.php : 64\nLit:  \n"];
+  n10 [shape=box, label="D:\wordpress\wp-admin\install.php : 64\nVar: $body_classes\nFunc: display_header\n"];
+  n1 -> n2;
+  n1 -> n3;
+  n1 -> n4;
+  n1 -> n7;
+  n5 -> n2;
+  n5 -> n3;
+  n4 -> n5[label="Param #1"];
+  n4 -> n6[label="Param #2"];
+  n7 -> n8;
+  n8 -> n9[label="Param #1"];
+  n8 -> n10[label="Param #2"];
+  n10 -> n2;
+  n10 -> n3;
+  n10 -> n4;
+}

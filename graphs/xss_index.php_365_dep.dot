@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_365_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\widgets.php : 463\nVar: $single_sidebar_class\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\widgets.php : 458\nLit:  single-sidebar\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\widgets.php : 452\nLit: \n"];
+  n1 -> n2;
+  n1 -> n3;
+}

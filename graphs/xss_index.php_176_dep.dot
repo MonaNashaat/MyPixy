@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_176_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\about.php : 203\nVar: _t1_731\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\about.php : 205\nunresolved function:\n__\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\about.php : 205\nLit: The code that lies beneath actions and filters has been overhauled and modernized, fixing bugs along the way.\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+}

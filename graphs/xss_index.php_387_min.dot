@@ -1,0 +1,11 @@
+digraph cfg {
+  label="xss_index.php_387_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\edit-tags.php : 535\nVar: _t0_722\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\edit-tags.php : 535\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\edit-tags.php : 535\nbuiltin function:\n.\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\edit-tags.php : 535\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+}

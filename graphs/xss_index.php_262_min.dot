@@ -1,0 +1,21 @@
+digraph cfg {
+  label="xss_index.php_262_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\widgets.php : 285\nVar: _t1_714\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\widgets.php : 285\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\widgets.php : 285\nbuiltin function:\n.\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\widgets.php : 285\nbuiltin function:\n.\n"];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\widgets.php : 285\nbuiltin function:\n.\n"];
+  n6 [shape=ellipse, label="D:\wordpress\wp-admin\widgets.php : 285\nunresolved function:\nesc_attr\n(unmodeled)\n",style=filled];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\widgets.php : 285\nunresolved function:\nchecked\n(unmodeled)\n",style=filled];
+  n8 [shape=ellipse, label="D:\wordpress\wp-admin\widgets.php : 285\nbuiltin function:\n.\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\widgets.php : 285\nVar: $sbvalue[name]\nFunc: _main\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n2 -> n8;
+  n3 -> n4;
+  n3 -> n7;
+  n4 -> n5;
+  n5 -> n6;
+  n8 -> n9;
+}

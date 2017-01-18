@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_350_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\network\settings.php : 386\nVar: $fieldset_end\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\network\settings.php : 381\nLit: </fieldset>\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\network\settings.php : 378\nLit: \n"];
+  n1 -> n2;
+  n1 -> n3;
+}

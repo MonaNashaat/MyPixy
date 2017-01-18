@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_258_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugin-editor.php : 284\nLit: <input type='hidden' name='phperror' value='1' />\n"];
+}

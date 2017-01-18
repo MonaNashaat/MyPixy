@@ -1,0 +1,7 @@
+digraph cfg {
+  label="xss_index.php_370_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\users.php : 490\nVar: $msg\nFunc: _main\n"];
+  n2 [shape=box, label="<uninit>"];
+  n1 -> n2;
+}

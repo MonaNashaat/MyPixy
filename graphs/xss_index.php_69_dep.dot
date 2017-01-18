@@ -1,0 +1,7 @@
+digraph cfg {
+  label="xss_index.php_69_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-activate.php : 101\nVar: _t5_729\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-activate.php : 107\nunresolved function:\nwp_lostpassword_url\n(unmodeled)\n"];
+  n1 -> n2;
+}

@@ -1,0 +1,17 @@
+digraph cfg {
+  label="xss_index.php_347_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\users.php : 382\nVar: _t3_713\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\users.php : 382\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\users.php : 382\nbuiltin function:\n.\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\users.php : 382\nbuiltin function:\nsprintf\n"];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\users.php : 382\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n6 [shape=box, label="D:\wordpress\wp-admin\users.php : 382\nVar: $user\nFunc: _main\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\users.php : 379\nunresolved function:\nget_userdata\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n4 -> n5;
+  n4 -> n6;
+  n6 -> n7;
+}

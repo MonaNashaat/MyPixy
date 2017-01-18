@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_172_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\edit-comments.php : 200\nVar: _t1_712\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\edit-comments.php : 200\nunresolved function:\n__\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\edit-comments.php : 200\nLit: Comments on &#8220;%s&#8221;\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+}

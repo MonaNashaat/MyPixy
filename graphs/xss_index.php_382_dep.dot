@@ -1,0 +1,11 @@
+digraph cfg {
+  label="xss_index.php_382_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\users.php : 505\nVar: _t4_713\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\users.php : 505\nunresolved function:\nesc_html\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\users.php : 505\nVar: $usersearch\nFunc: _main\n"];
+  n4 [shape=box, label="<uninit>"];
+  n1 -> n2;
+  n3 -> n4;
+  n2 -> n3[label="Param #1"];
+}

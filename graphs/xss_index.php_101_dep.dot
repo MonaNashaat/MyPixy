@@ -1,0 +1,21 @@
+digraph cfg {
+  label="xss_index.php_101_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-activate.php : 135\nVar: $result[password]\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-activate.php : 92\nVar: _t0_729\nFunc: _main\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-activate.php : 92\nunresolved function:\nwpmu_activate_signup\n(unmodeled)\n"];
+  n4 [shape=box, label="D:\wordpress\wp-activate.php : 92\nVar: $key\nFunc: _main\n"];
+  n5 [shape=box, label="D:\wordpress\wp-activate.php : 91\nVar: _t0_729\nFunc: _main\n"];
+  n6 [shape=box, label="D:\wordpress\wp-activate.php : 91\nVar: $_POST[key]\nFunc: _superglobals\n"];
+  n7 [shape=box, label="<uninit>"];
+  n8 [shape=box, label="D:\wordpress\wp-activate.php : 91\nVar: $_GET[key]\nFunc: _superglobals\n"];
+  n9 [shape=box, label="<uninit>"];
+  n2 -> n3;
+  n6 -> n7;
+  n5 -> n6;
+  n5 -> n8;
+  n8 -> n9;
+  n4 -> n5;
+  n3 -> n4[label="Param #1"];
+  n1 -> n2;
+}

@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_436_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\nav-menus.php : 805\nVar: _t1_716\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 805\nunresolved function:\n__\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 805\nLit: Automatically add new top-level pages to this menu\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+}

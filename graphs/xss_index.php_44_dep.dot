@@ -1,0 +1,11 @@
+digraph cfg {
+  label="xss_index.php_44_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\admin-header.php : 84\nVar: _t0_709\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\admin-header.php : 84\nbuiltin function:\naddslashes\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\admin-header.php : 84\nVar: _member\nFunc: _special\n"];
+  n4 [shape=box, label="<uninit>"];
+  n1 -> n2;
+  n3 -> n4;
+  n2 -> n3[label="Param #1"];
+}

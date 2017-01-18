@@ -1,0 +1,13 @@
+digraph cfg {
+  label="xss_index.php_272_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\options.php : 292\nVar: $name\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\options.php : 282\nVar: _t2_730\nFunc: _main\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\options.php : 282\nunresolved function:\nesc_attr\n(unmodeled)\n"];
+  n4 [shape=box, label="D:\wordpress\wp-admin\options.php : 282\nVar: $option\nFunc: _main\n"];
+  n5 [shape=box, label="<uninit>"];
+  n2 -> n3;
+  n4 -> n5;
+  n3 -> n4[label="Param #1"];
+  n1 -> n2;
+}

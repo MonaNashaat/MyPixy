@@ -1,0 +1,35 @@
+digraph cfg {
+  label="xss_index.php_115_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-activate.php : 145\nVar: $url\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-activate.php : 128\nVar: _t0_729\nFunc: _main\n"];
+  n3 [shape=box, label="D:\wordpress\wp-activate.php : 128\nVar: _t2_729\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-activate.php : 128\nunresolved function:\nget_home_url\n(unmodeled)\n"];
+  n5 [shape=box, label="D:\wordpress\wp-activate.php : 128\nVar: _t3_729\nFunc: _main\n"];
+  n6 [shape=ellipse, label="D:\wordpress\wp-activate.php : 128\nbuiltin function:\n(int)\n"];
+  n7 [shape=box, label="D:\wordpress\wp-activate.php : 128\nVar: $result[blog_id]\nFunc: _main\n"];
+  n8 [shape=box, label="D:\wordpress\wp-activate.php : 92\nVar: _t0_729\nFunc: _main\n"];
+  n9 [shape=ellipse, label="D:\wordpress\wp-activate.php : 92\nunresolved function:\nwpmu_activate_signup\n(unmodeled)\n"];
+  n10 [shape=box, label="D:\wordpress\wp-activate.php : 92\nVar: $key\nFunc: _main\n"];
+  n11 [shape=box, label="D:\wordpress\wp-activate.php : 91\nVar: _t0_729\nFunc: _main\n"];
+  n12 [shape=box, label="D:\wordpress\wp-activate.php : 91\nVar: $_POST[key]\nFunc: _superglobals\n"];
+  n13 [shape=box, label="<uninit>"];
+  n14 [shape=box, label="D:\wordpress\wp-activate.php : 91\nVar: $_GET[key]\nFunc: _superglobals\n"];
+  n15 [shape=box, label="<uninit>"];
+  n16 [shape=box, label="D:\wordpress\wp-activate.php : 128\nLit: \n"];
+  n3 -> n4;
+  n5 -> n6;
+  n8 -> n9;
+  n12 -> n13;
+  n11 -> n12;
+  n11 -> n14;
+  n14 -> n15;
+  n10 -> n11;
+  n9 -> n10[label="Param #1"];
+  n7 -> n8;
+  n6 -> n7[label="Param #1"];
+  n4 -> n5[label="Param #1"];
+  n2 -> n3;
+  n2 -> n16;
+  n1 -> n2;
+}

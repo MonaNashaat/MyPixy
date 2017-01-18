@@ -1,0 +1,9 @@
+digraph cfg {
+  label="codeEval_index.php_30_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\edit.php : 301\nVar: $bulk_counts\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\edit.php : 263\nVar: _t0_723\nFunc: _main\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\edit.php : 263\nLit: \n"];
+  n2 -> n3;
+  n1 -> n2;
+}

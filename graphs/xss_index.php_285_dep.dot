@@ -1,0 +1,15 @@
+digraph cfg {
+  label="xss_index.php_285_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\network\settings.php : 299\nVar: _t0_708\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 299\nunresolved function:\nesc_attr\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\network\settings.php : 299\nVar: _t1_708\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\network\settings.php : 299\nunresolved function:\nget_site_option\n(unmodeled)\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\network\settings.php : 299\nLit: upload_filetypes\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\network\settings.php : 299\nLit: jpg jpeg png gif\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n4 -> n5[label="Param #1"];
+  n4 -> n6[label="Param #2"];
+  n2 -> n3[label="Param #1"];
+}

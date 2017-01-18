@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_198_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\options-permalink.php : 216\nVar: _t1_721\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\options-permalink.php : 216\nunresolved function:\n__\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 216\nLit: If you like, you may enter custom structures for your category and tag URLs here. For example, using <code>topics</code> as your category base would make your category links like <code>%s/topics/uncategorized/</code>. If you leave these blank the defaults will be used.\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+}

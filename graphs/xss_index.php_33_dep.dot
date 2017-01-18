@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_index.php_33_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-activate.php : 79\nVar: _t0_729\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-activate.php : 79\nunresolved function:\nnetwork_site_url\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-activate.php : 79\nLit: wp-activate.php\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+}

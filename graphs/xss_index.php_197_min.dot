@@ -1,0 +1,17 @@
+digraph cfg {
+  label="xss_index.php_197_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugin-editor.php : 214\nVar: _t0_728\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 214\nbuiltin function:\nsprintf\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 214\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 214\nbuiltin function:\n.\n"];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 214\nbuiltin function:\n.\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\plugin-editor.php : 214\nVar: $file\nFunc: _main\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 61\nunresolved function:\nvalidate_file_to_edit\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n2 -> n4;
+  n4 -> n5;
+  n5 -> n6;
+  n6 -> n7;
+}

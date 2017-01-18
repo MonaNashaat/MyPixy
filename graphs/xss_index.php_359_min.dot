@@ -1,0 +1,7 @@
+digraph cfg {
+  label="xss_index.php_359_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugins.php : 428\nVar: _t2_725\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 430\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+}

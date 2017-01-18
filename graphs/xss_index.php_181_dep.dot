@@ -1,0 +1,15 @@
+digraph cfg {
+  label="xss_index.php_181_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\install.php : 206\nVar: _t0_705\nFunc: display_setup_form\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\install.php : 206\nVar: _t2_705\nFunc: display_setup_form\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\install.php : 206\nunresolved function:\nesc_attr\n(unmodeled)\n"];
+  n4 [shape=box, label="D:\wordpress\wp-admin\install.php : 206\nVar: $_REQUEST[language]\nFunc: _superglobals\n"];
+  n5 [shape=box, label="<uninit>"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\install.php : 206\nLit: \n"];
+  n2 -> n3;
+  n4 -> n5;
+  n3 -> n4[label="Param #1"];
+  n1 -> n2;
+  n1 -> n6;
+}

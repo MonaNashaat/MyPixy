@@ -1,0 +1,35 @@
+digraph cfg {
+  label="xss_index.php_424_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\nav-menus.php : 707\nVar: _t3_716\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 708\nbuiltin function:\nimplode\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 708\nLit: , \n"];
+  n4 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 708\nVar: $assigned_locations\nFunc: _main\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 703\nVar: _t2_716\nFunc: _main\n"];
+  n6 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 703\nbuiltin function:\narray_slice\n(unmodeled)\n"];
+  n7 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 703\nVar: $locations_assigned_to_this_menu\nFunc: _main\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 689\nVar: _t2_716\nFunc: _main\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 689\nLit: \n"];
+  n10 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 703\nLit: 0\n"];
+  n11 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 703\nVar: _t3_716\nFunc: _main\n"];
+  n12 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 703\nunresolved function:\nabsint\n(unmodeled)\n"];
+  n13 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 703\nVar: _t4_716\nFunc: _main\n"];
+  n14 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 703\nunresolved function:\napply_filters\n(unmodeled)\n"];
+  n15 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 703\nLit: wp_nav_locations_listed_per_menu\n"];
+  n16 [shape=box, label="D:\wordpress\wp-admin\nav-menus.php : 703\nLit: 3\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+  n2 -> n4[label="Param #2"];
+  n5 -> n6;
+  n8 -> n9;
+  n7 -> n8;
+  n6 -> n7[label="Param #1"];
+  n6 -> n10[label="Param #2"];
+  n6 -> n11[label="Param #3"];
+  n11 -> n12;
+  n13 -> n14;
+  n14 -> n15[label="Param #1"];
+  n14 -> n16[label="Param #2"];
+  n12 -> n13[label="Param #1"];
+  n4 -> n5;
+}

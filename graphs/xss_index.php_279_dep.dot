@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_279_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\install.php : 294\nLit: <form id=\"setup\" method=\"post\" action=\"?step=1\">\n"];
+}

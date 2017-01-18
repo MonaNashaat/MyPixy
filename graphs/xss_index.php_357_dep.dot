@@ -1,0 +1,26 @@
+digraph cfg {
+  label="xss_index.php_357_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\widgets.php : 411\nVar: _t1_714\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\widgets.php : 411\nunresolved function:\nesc_attr\n(unmodeled)\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\widgets.php : 411\nVar: $wrap_class\nFunc: _main\n"];
+  n4 [shape=box, label="D:\wordpress\wp-admin\widgets.php : 405\nLit: widgets-holder-wrap\n"];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\widgets.php : 407\nbuiltin function:\n.\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\widgets.php : 407\nVar: $wrap_class\nFunc: _main\n"];
+  n7 [shape=box, label="D:\wordpress\wp-admin\widgets.php : 407\nVar: _t1_714\nFunc: _main\n"];
+  n8 [shape=ellipse, label="D:\wordpress\wp-admin\widgets.php : 407\nbuiltin function:\n.\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\widgets.php : 407\nLit:  \n"];
+  n10 [shape=box, label="D:\wordpress\wp-admin\widgets.php : 407\nVar: $registered_sidebar[class]\nFunc: _main\n"];
+  n11 [shape=box, label="<uninit>"];
+  n1 -> n2;
+  n3 -> n4;
+  n3 -> n5;
+  n6 -> n4;
+  n5 -> n6[label="Param #1"];
+  n5 -> n7[label="Param #2"];
+  n7 -> n8;
+  n8 -> n9[label="Param #1"];
+  n8 -> n10[label="Param #2"];
+  n10 -> n11;
+  n2 -> n3[label="Param #1"];
+}

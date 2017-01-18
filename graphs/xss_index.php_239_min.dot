@@ -1,0 +1,21 @@
+digraph cfg {
+  label="xss_index.php_239_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugin-editor.php : 262\nVar: $plugin_file\nFunc: _main\n",style=filled];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\import.php : 105\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\import.php : 105\nbuiltin function:\n.\n"];
+  n4 [shape=box, label="D:\wordpress\wp-admin\import.php : 105\nVar: $plugin_slug\nFunc: _main\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\import.php : 98\nVar: $data[install]\nFunc: _main\n",style=filled];
+  n6 [shape=box, label="D:\wordpress\wp-admin\import.php : 105\nVar: $keys[0]\nFunc: _main\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\import.php : 104\nbuiltin function:\narray_keys\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\import.php : 104\nVar: $plugins\nFunc: _main\n"];
+  n9 [shape=ellipse, label="D:\wordpress\wp-admin\import.php : 102\nunresolved function:\nget_plugins\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n2 -> n6;
+  n3 -> n4;
+  n4 -> n5;
+  n6 -> n7;
+  n7 -> n8;
+  n8 -> n9;
+}

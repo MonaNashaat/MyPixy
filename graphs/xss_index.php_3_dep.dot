@@ -1,0 +1,15 @@
+digraph cfg {
+  label="xss_index.php_3_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\async-upload.php : 35\nVar: _t1_710\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\async-upload.php : 35\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\async-upload.php : 35\nLit: Content-Type: text/html; charset=\n"];
+  n4 [shape=box, label="D:\wordpress\wp-admin\async-upload.php : 35\nVar: _t1_710\nFunc: _main\n"];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\async-upload.php : 35\nunresolved function:\nget_option\n(unmodeled)\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\async-upload.php : 35\nLit: blog_charset\n"];
+  n1 -> n2;
+  n2 -> n3[label="Param #1"];
+  n2 -> n4[label="Param #2"];
+  n4 -> n5;
+  n5 -> n6[label="Param #1"];
+}

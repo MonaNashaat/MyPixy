@@ -1,0 +1,35 @@
+digraph cfg {
+  label="xss_index.php_251_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugin-editor.php : 275\nVar: $docs_select\nFunc: _main\n",style=filled];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 175\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\plugin-editor.php : 175\nVar: $docs_select\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 171\nbuiltin function:\n.\n"];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 171\nbuiltin function:\n.\n"];
+  n6 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 171\nbuiltin function:\n.\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 171\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n8 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 173\nbuiltin function:\n.\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\plugin-editor.php : 173\nVar: $docs_select\nFunc: _main\n"];
+  n10 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 173\nbuiltin function:\n.\n"];
+  n11 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 173\nbuiltin function:\n.\n"];
+  n12 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 173\nbuiltin function:\n.\n"];
+  n13 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 173\nbuiltin function:\n.\n"];
+  n14 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 173\nunresolved function:\nesc_attr\n(unmodeled)\n",style=filled];
+  n15 [shape=ellipse, label="D:\wordpress\wp-admin\plugin-editor.php : 173\nunresolved function:\nesc_html\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n3 -> n8;
+  n4 -> n5;
+  n5 -> n6;
+  n6 -> n7;
+  n8 -> n9;
+  n8 -> n10;
+  n9 -> n4;
+  n9 -> n8;
+  n10 -> n11;
+  n11 -> n12;
+  n11 -> n15;
+  n12 -> n13;
+  n13 -> n14;
+}

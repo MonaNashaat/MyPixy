@@ -1,0 +1,13 @@
+digraph cfg {
+  label="xss_index.php_118_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\comment.php : 149\nVar: $caution_msg\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 118\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 122\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 126\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\comment.php : 114\nunresolved function:\n__\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n1 -> n3;
+  n1 -> n4;
+  n1 -> n5;
+}

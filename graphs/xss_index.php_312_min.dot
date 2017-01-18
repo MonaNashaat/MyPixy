@@ -1,0 +1,26 @@
+digraph cfg {
+  label="xss_index.php_312_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugins.php : 310\nVar: _t1_725\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 310\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 310\nbuiltin function:\nsprintf\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 310\nunresolved function:\n_x\n(unmodeled)\n",style=filled];
+  n5 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 310\nbuiltin function:\n.\n"];
+  n6 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 310\nbuiltin function:\n.\n"];
+  n7 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 310\nVar: $plugin[Name]\nFunc: _main\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 20\nVar: _t0_725\nFunc: _main\n"];
+  n9 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 20\nVar: $_REQUEST[plugin]\nFunc: _superglobals\n",style=filled];
+  n10 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 310\nbuiltin function:\n.\n"];
+  n11 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 310\nVar: $plugin[AuthorName]\nFunc: _main\n"];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n3 -> n5;
+  n3 -> n10;
+  n5 -> n6;
+  n6 -> n7;
+  n7 -> n8;
+  n8 -> n9;
+  n10 -> n11;
+  n11 -> n8;
+}

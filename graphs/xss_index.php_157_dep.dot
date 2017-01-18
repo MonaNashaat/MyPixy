@@ -1,0 +1,19 @@
+digraph cfg {
+  label="xss_index.php_157_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\network\site-new.php : 192\nVar: _t1_715\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\network\site-new.php : 192\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="D:\wordpress\wp-admin\network\site-new.php : 192\nVar: _t1_715\nFunc: _main\n"];
+  n4 [shape=ellipse, label="D:\wordpress\wp-admin\network\site-new.php : 192\nbuiltin function:\n.\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\network\site-new.php : 192\nLit: <div id=\"message\" class=\"updated notice is-dismissible\"><p>\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\network\site-new.php : 192\nVar: $msg\nFunc: _main\n"];
+  n7 [shape=box, label="<uninit>"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\network\site-new.php : 192\nLit: </p></div>\n"];
+  n1 -> n2;
+  n3 -> n4;
+  n4 -> n5[label="Param #1"];
+  n4 -> n6[label="Param #2"];
+  n6 -> n7;
+  n2 -> n3[label="Param #1"];
+  n2 -> n8[label="Param #2"];
+}

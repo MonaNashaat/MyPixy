@@ -1,0 +1,7 @@
+digraph cfg {
+  label="xss_index.php_445_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\nav-menus.php : 838\nVar: _t0_716\nFunc: _main\n"];
+  n2 [shape=ellipse, label="D:\wordpress\wp-admin\nav-menus.php : 838\nunresolved function:\nesc_url\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+}

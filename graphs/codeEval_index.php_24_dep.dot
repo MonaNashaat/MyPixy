@@ -1,0 +1,27 @@
+digraph cfg {
+  label="codeEval_index.php_24_dep";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugins.php : 206\nVar: $plugins\nFunc: _main\n"];
+  n2 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 205\nVar: _t0_725\nFunc: _main\n"];
+  n3 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 205\nbuiltin function:\narray_filter\n(unmodeled)\n"];
+  n4 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 205\nVar: $plugins\nFunc: _main\n"];
+  n5 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 200\nVar: _t0_725\nFunc: _main\n"];
+  n6 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 200\nVar: _t2_725\nFunc: _main\n"];
+  n7 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 200\nbuiltin function:\n(array)\n(unmodeled)\n"];
+  n8 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 200\nVar: $_POST[checked]\nFunc: _superglobals\n"];
+  n9 [shape=box, label="<uninit>",style=filled];
+  n10 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 200\nVar: _t3_725\nFunc: _main\n"];
+  n11 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 200\nLit: \n"];
+  n12 [shape=box, label="D:\wordpress\wp-admin\plugins.php : 205\nLit: is_plugin_active\n"];
+  n2 -> n3;
+  n6 -> n7;
+  n8 -> n9;
+  n7 -> n8[label="Param #1"];
+  n5 -> n6;
+  n5 -> n10;
+  n10 -> n11;
+  n4 -> n5;
+  n3 -> n4[label="Param #1"];
+  n3 -> n12[label="Param #2"];
+  n1 -> n2;
+}
