@@ -1,5 +1,0 @@
-digraph cfg {
-  label="xss_index.php_200_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\edit-comments.php : 216\nLit: </span>\n"];
-}

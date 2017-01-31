@@ -1,9 +1,0 @@
-digraph cfg {
-  label="xss_index.php_208_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\options-permalink.php : 225\nVar: $blog_prefix\nFunc: _main\n"];
-  n2 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 55\nLit: \n"];
-  n3 [shape=box, label="D:\wordpress\wp-admin\options-permalink.php : 66\nLit: /blog\n"];
-  n1 -> n2;
-  n1 -> n3;
-}

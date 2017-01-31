@@ -1,9 +1,0 @@
-digraph cfg {
-  label="xss_index.php_375_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\users.php : 498\nVar: _t2_713\nFunc: _main\n"];
-  n2 [shape=ellipse, label="D:\wordpress\wp-admin\users.php : 498\nunresolved function:\nadmin_url\n(unmodeled)\n"];
-  n3 [shape=box, label="D:\wordpress\wp-admin\users.php : 498\nLit: user-new.php\n"];
-  n1 -> n2;
-  n2 -> n3[label="Param #1"];
-}

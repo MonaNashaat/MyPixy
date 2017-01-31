@@ -1,5 +1,0 @@
-digraph cfg {
-  label="xss_index.php_191_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\edit-comments.php : 211\nLit: <span class=\"subtitle\">\n"];
-}

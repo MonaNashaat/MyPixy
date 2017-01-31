@@ -1,7 +1,0 @@
-digraph cfg {
-  label="xss_index.php_19_min";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\admin-header.php : 67\nVar: $admin_title\nFunc: _main\n"];
-  n2 [shape=ellipse, label="D:\wordpress\wp-admin\admin-header.php : 61\nunresolved function:\napply_filters\n(unmodeled)\n",style=filled];
-  n1 -> n2;
-}

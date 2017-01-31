@@ -1,5 +1,0 @@
-digraph cfg {
-  label="codeEval_index.php_9_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\options-permalink.php : 103\nLit: #/+#\n"];
-}

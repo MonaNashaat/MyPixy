@@ -1,7 +1,0 @@
-digraph cfg {
-  label="xss_index.php_24_min";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\async-upload.php : 72\nVar: _t0_710\nFunc: _main\n"];
-  n2 [shape=ellipse, label="D:\wordpress\wp-admin\async-upload.php : 72\nunresolved function:\nget_media_item\n(unmodeled)\n",style=filled];
-  n1 -> n2;
-}

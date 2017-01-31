@@ -1,5 +1,0 @@
-digraph cfg {
-  label="xss_index.php_107_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\network\settings.php : 140\nLit: <code>NOBLOGREDIRECT</code>\n"];
-}

@@ -1,9 +1,0 @@
-digraph cfg {
-  label="xss_index.php_47_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\upload.php : 85\nVar: _t1_727\nFunc: _main\n"];
-  n2 [shape=ellipse, label="D:\wordpress\wp-admin\upload.php : 87\nunresolved function:\n__\n(unmodeled)\n"];
-  n3 [shape=box, label="D:\wordpress\wp-admin\upload.php : 87\nLit: The grid view for the Media Library requires JavaScript. <a href=\"%s\">Switch to the list view</a>.\n"];
-  n1 -> n2;
-  n2 -> n3[label="Param #1"];
-}

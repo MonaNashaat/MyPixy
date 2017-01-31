@@ -1,5 +1,0 @@
-digraph cfg {
-  label="codeEval_index.php_19_min";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\widgets.php : 175\nVar: $control[callback]\nFunc: _main\n",style=filled];
-}

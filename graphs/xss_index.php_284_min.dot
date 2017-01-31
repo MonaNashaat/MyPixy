@@ -1,9 +1,0 @@
-digraph cfg {
-  label="xss_index.php_284_min";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\widgets.php : 298\nVar: _t1_714\nFunc: _main\n"];
-  n2 [shape=ellipse, label="D:\wordpress\wp-admin\widgets.php : 298\nbuiltin function:\n.\n"];
-  n3 [shape=box, label="D:\wordpress\wp-admin\widgets.php : 298\nVar: $sbname\nFunc: _main\n",style=filled];
-  n1 -> n2;
-  n2 -> n3;
-}

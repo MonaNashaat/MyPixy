@@ -1,5 +1,0 @@
-digraph cfg {
-  label="xss_index.php_98_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\install.php : 125\nLit: <input name=\"user_name\" type=\"hidden\" value=\"admin\" />\n"];
-}

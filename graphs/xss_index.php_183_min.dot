@@ -1,9 +1,0 @@
-digraph cfg {
-  label="xss_index.php_183_min";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\options-permalink.php : 207\nVar: _t0_721\nFunc: _main\n"];
-  n2 [shape=ellipse, label="D:\wordpress\wp-admin\options-permalink.php : 207\nbuiltin function:\n.\n"];
-  n3 [shape=ellipse, label="D:\wordpress\wp-admin\options-permalink.php : 207\nunresolved function:\nget_option\n(unmodeled)\n",style=filled];
-  n1 -> n2;
-  n2 -> n3;
-}

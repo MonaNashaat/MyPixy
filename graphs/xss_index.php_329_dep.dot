@@ -1,5 +1,0 @@
-digraph cfg {
-  label="xss_index.php_329_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\widgets.php : 351\nLit:  <a class=\"page-title-action hide-if-no-customize\" href=\"%1$s\">%2$s</a>\n"];
-}

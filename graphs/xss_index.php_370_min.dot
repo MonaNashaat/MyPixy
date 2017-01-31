@@ -1,5 +1,0 @@
-digraph cfg {
-  label="xss_index.php_370_min";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\users.php : 490\nVar: $msg\nFunc: _main\n",style=filled];
-}

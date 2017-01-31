@@ -1,5 +1,0 @@
-digraph cfg {
-  label="codeEval_index.php_1_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\edit-comments.php : 36\nLit: absint\n"];
-}

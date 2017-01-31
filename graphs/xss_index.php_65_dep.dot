@@ -1,9 +1,0 @@
-digraph cfg {
-  label="xss_index.php_65_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-activate.php : 101\nVar: _t1_729\nFunc: _main\n"];
-  n2 [shape=ellipse, label="D:\wordpress\wp-activate.php : 103\nunresolved function:\n__\n(unmodeled)\n"];
-  n3 [shape=box, label="D:\wordpress\wp-activate.php : 103\nLit: Your account has been activated. You may now <a href=\"%1$s\">log in</a> to the site using your chosen username of &#8220;%2$s&#8221;. Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>.\n"];
-  n1 -> n2;
-  n2 -> n3[label="Param #1"];
-}

@@ -1,7 +1,0 @@
-digraph cfg {
-  label="xss_index.php_109_min";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\install.php : 143\nVar: _t0_705\nFunc: display_setup_form\n"];
-  n2 [shape=ellipse, label="D:\wordpress\wp-admin\install.php : 143\nunresolved function:\nesc_attr\n(unmodeled)\n",style=filled];
-  n1 -> n2;
-}

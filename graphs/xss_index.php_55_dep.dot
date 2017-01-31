@@ -1,5 +1,0 @@
-digraph cfg {
-  label="xss_index.php_55_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\link-manager.php : 92\nLit: <div id=\"message\" class=\"updated notice is-dismissible\"><p>\n"];
-}

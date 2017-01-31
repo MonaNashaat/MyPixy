@@ -1,5 +1,0 @@
-digraph cfg {
-  label="xss_index.php_430_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\nav-menus.php : 740\nLit: blank-slate\n"];
-}

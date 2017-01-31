@@ -1,7 +1,0 @@
-digraph cfg {
-  label="xss_index.php_219_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\upload.php : 232\nVar: _t2_727\nFunc: _main\n"];
-  n2 [shape=ellipse, label="D:\wordpress\wp-admin\upload.php : 232\nunresolved function:\nget_search_query\n(unmodeled)\n"];
-  n1 -> n2;
-}

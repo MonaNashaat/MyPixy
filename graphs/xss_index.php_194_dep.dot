@@ -1,5 +1,0 @@
-digraph cfg {
-  label="xss_index.php_194_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\about.php : 213\nLit: https://make.wordpress.org/core/2016/10/26/registering-your-settings-in-wordpress-4-7/\n"];
-}

@@ -1,7 +1,0 @@
-digraph cfg {
-  label="xss_index.php_306_min";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\edit-comments.php : 309\nVar: _t0_712\nFunc: _main\n"];
-  n2 [shape=ellipse, label="D:\wordpress\wp-admin\edit-comments.php : 309\nunresolved function:\nesc_attr\n(unmodeled)\n",style=filled];
-  n1 -> n2;
-}

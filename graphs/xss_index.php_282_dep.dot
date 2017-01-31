@@ -1,5 +1,0 @@
-digraph cfg {
-  label="xss_index.php_282_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\install.php : 296\nLit: </form>\n"];
-}

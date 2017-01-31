@@ -28,21 +28,21 @@ public final class Dumper {
 	private static int idCounter;
 	static final String linesep = System.getProperty("line.separator");
 
-	// *********************************************************************************    
+	// *********************************************************************************
 	// CONSTRUCTORS ********************************************************************
-	// *********************************************************************************    
+	// *********************************************************************************
 
 	// since this class is stateless, there is no need to create an instance of it
 	private Dumper() {
 	}
 
-	// *********************************************************************************    
-	// DOT: ParseTree ******************************************************************    
+	// *********************************************************************************
+	// DOT: ParseTree ******************************************************************
 	// *********************************************************************************
 
 	// dumpDot(ParseTree, String, String) **********************************************
 
-	// dumps the parse tree in dot syntax to the directory specified 
+	// dumps the parse tree in dot syntax to the directory specified
 	// by "path" and the file specified by "filename"
 	static void dumpDot(ParseTree parseTree, String path, String filename) {
 
@@ -110,7 +110,7 @@ public final class Dumper {
 		// print edge to parent
 		ParseNode parent = parseNode.getParent();
 		if (parent != null) {
-			outWriter.write("  n" + parent.getId() + " -> n" + 
+			outWriter.write("  n" + parent.getId() + " -> n" +
 					parseNode.getId() + ";\n");
 		}
 		// recursion
@@ -120,8 +120,8 @@ public final class Dumper {
 
 	}
 
-	// *********************************************************************************    
-	// DOT: TacFunction ****************************************************************    
+	// *********************************************************************************
+	// DOT: TacFunction ****************************************************************
 	// *********************************************************************************
 
 	// dumpDot(TacFunction, String, boolean) *******************************************
@@ -139,7 +139,7 @@ public final class Dumper {
 				paramString = paramString.substring(1); // remove "$"
 				if (param.hasDefault()) {
 					dumpDot(
-							param.getDefaultCfg(), 
+							param.getDefaultCfg(),
 							function.getName() + "_" + paramString,
 							graphPath);
 				}
@@ -215,7 +215,7 @@ public final class Dumper {
         if (reversePostOrder != -1) {
             name += " [" + reversePostOrder + "]";
         }*/
-		outWriter.write("  n" + nodeId + " [label=\"" + 
+		outWriter.write("  n" + nodeId + " [label=\"" +
 				/*nodeId + ": " +*/ name + "\"];\n");
 
 		// handle successors
@@ -249,11 +249,11 @@ public final class Dumper {
 		return nodeId;
 	}
 
-	// *********************************************************************************    
-	// OTHER ***************************************************************************    
+	// *********************************************************************************
+	// OTHER ***************************************************************************
 	// *********************************************************************************
 
-	// dump(TacFunction) ***************************************************************    
+	// dump(TacFunction) ***************************************************************
 
 	// dumps function information
 	public static void dump(TacFunction function) {
@@ -311,8 +311,8 @@ public final class Dumper {
 			int op = cfgNode.getOperator();
 
 			return (
-					leftString + 
-					" = " + 
+					leftString +
+					" = " +
 							leftOperandString +
 							" " + TacOperators.opToName(op) + " " +
 							rightOperandString);
@@ -325,8 +325,8 @@ public final class Dumper {
 			int op = cfgNode.getOperator();
 
 			return (
-					leftString + 
-					" = " + 
+					leftString +
+					" = " +
 							" " + TacOperators.opToName(op) + " " +
 							rightString);
 
@@ -413,7 +413,7 @@ public final class Dumper {
 
 			return (
 					cfgNode.getFunctionName() + "(" +
-							paramListStringBuf.toString() + ") " + "<" + 
+							paramListStringBuf.toString() + ") " + "<" +
 							getPlaceString(cfgNode.getTempVar()) + ">");
 
 		} else if (cfgNodeX instanceof CfgNodeCallUnknown) {
@@ -436,7 +436,7 @@ public final class Dumper {
 
 			return ("UNKNOWN: " +
 					cfgNode.getFunctionName() + "(" +
-					paramListStringBuf.toString() + ") " + "<" + 
+					paramListStringBuf.toString() + ") " + "<" +
 					getPlaceString(cfgNode.getTempVar()) + ">");
 
 		} else if (cfgNodeX instanceof CfgNodeAssignArray) {
@@ -494,7 +494,7 @@ public final class Dumper {
 			CfgNodeEval cfgNode = (CfgNodeEval) cfgNodeX;
 			String evalMe ="";
 			String leftString ="";
-			if(cfgNode.getRight().isVariable()){        
+			if(cfgNode.getRight().isVariable()){
 				evalMe = cfgNode.getRight().getVariable().toString();
 			}
 			if(cfgNode.getLeft().isVariable()){
@@ -505,9 +505,9 @@ public final class Dumper {
 		} else if (cfgNodeX instanceof CfgNodeDefine) {
 
 			CfgNodeDefine cfgNode = (CfgNodeDefine) cfgNodeX;
-			return("define(" + 
-					cfgNode.getSetMe() + ", " + 
-					cfgNode.getSetTo() + ", " + 
+			return("define(" +
+					cfgNode.getSetMe() + ", " +
+					cfgNode.getSetTo() + ", " +
 					cfgNode.getCaseInsensitive() + ")");
 
 		} else if (cfgNodeX instanceof CfgNodeInclude) {
@@ -544,7 +544,7 @@ public final class Dumper {
 		}
 	}
 
-	// escapeDot ***********************************************************************    
+	// escapeDot ***********************************************************************
 
 	// escapes special characters in the given string, making it suitable for
 	// dot output; if the string's length exceeds the given limit, "..." is
@@ -587,13 +587,13 @@ public final class Dumper {
 		String spaces = buf.toString();
 
 		/*
-        System.out.print(spaces + "Sym: " + parseNode.getSymbol() + ", Name: " + 
+        System.out.print(spaces + "Sym: " + parseNode.getSymbol() + ", Name: " +
                 PhpSymbols.symToName(parseNode.getSymbol()));
 		 */
-		System.out.print(spaces + "Sym: " + parseNode.getSymbol() + ", Name: " + 
+		System.out.print(spaces + "Sym: " + parseNode.getSymbol() + ", Name: " +
 				parseNode.getName());
 		if (parseNode.getLexeme() != null) {
-			System.out.print(", Lex: " + parseNode.getLexeme() + ", lineno: " + 
+			System.out.print(", Lex: " + parseNode.getLexeme() + ", lineno: " +
 					parseNode.getLineno());
 		}
 		System.out.println();
@@ -760,7 +760,7 @@ public final class Dumper {
 				for (Iterator bft = cfg.bfIterator(); bft.hasNext(); ) {
 					CfgNode cfgNode = (CfgNode) bft.next();
 					writer.write("----------------------------------------" + linesep);
-					writer.write(cfgNode.getFileName() + ", " + cfgNode.getOrigLineno() + 
+					writer.write(cfgNode.getFileName() + ", " + cfgNode.getOrigLineno() +
 							", " + makeCfgNodeName(cfgNode) + linesep);
 					dump(analysisInfoNew.getAnalysisNode(cfgNode).getRecycledFoldedValue(), writer);
 				}
@@ -808,7 +808,7 @@ public final class Dumper {
 
 	//  dump(LatticeElement) ************************************************************
 
-	static public void dump(LatticeElement elementX, Writer writer) 
+	static public void dump(LatticeElement elementX, Writer writer)
 			throws IOException {
 
 		if (elementX instanceof AliasLatticeElement) {
@@ -862,12 +862,12 @@ public final class Dumper {
 		writer.flush();
 	}
 
-	// only prints 
-	// - non-temporaries 
+	// only prints
+	// - non-temporaries
 	// - non-shadows
 	// - variables of non-builtin functions
 	/*
-    static public void dump(ExTaintLatticeElement element, Writer writer) 
+    static public void dump(ExTaintLatticeElement element, Writer writer)
     throws IOException {
 
         // dump non-default taint mappings
@@ -904,14 +904,14 @@ public final class Dumper {
 	 */
 
 	// returns true if this variable should not be dumped, because it is a
-	// - temporary 
+	// - temporary
 	// - shadow
 	// - variable of a builtin function
 	private static boolean doNotDump(Variable var) {
 		// EFF: "endsWith" technique not too elegant; might also lead
 		// to "rootkit effects"...; alternative would be: save additional
 		// field for variables
-		if (var.isTemp() || 
+		if (var.isTemp() ||
 				var.getName().endsWith(InternalStrings.gShadowSuffix) ||
 				var.getName().endsWith(InternalStrings.gShadowSuffix) ||
 				BuiltinFunctions.isBuiltinFunction(var.getSymbolTable().getName())) {
@@ -923,7 +923,7 @@ public final class Dumper {
 
 	//  ********************************************************************************
 
-	static public void dumpComplete(DepLatticeElement element, Writer writer) 
+	static public void dumpComplete(DepLatticeElement element, Writer writer)
 			throws IOException {
 
 		// dump non-default dep mappings
@@ -957,11 +957,11 @@ public final class Dumper {
 		}
 	}
 
-	// like dumpComplete, but only prints 
-	// - non-temporaries 
+	// like dumpComplete, but only prints
+	// - non-temporaries
 	// - non-shadows
 	// - variables of non-builtin functions
-	static public void dump(DepLatticeElement element, Writer writer) 
+	static public void dump(DepLatticeElement element, Writer writer)
 			throws IOException {
 
 		// dump non-default taint mappings
@@ -1018,7 +1018,7 @@ public final class Dumper {
 		writer.write(")");
 	}
 
-	static public void dump(MayAliases mayAliases, Writer writer) 
+	static public void dump(MayAliases mayAliases, Writer writer)
 			throws IOException {
 		Set mayAliasPairs = mayAliases.getPairs();
 		writer.write("a{ ");
@@ -1030,7 +1030,7 @@ public final class Dumper {
 		writer.write("}" + linesep);
 	}
 
-	static public void dump(MayAliasPair mayAliasPair, Writer writer) 
+	static public void dump(MayAliasPair mayAliasPair, Writer writer)
 			throws IOException {
 		Set pair = mayAliasPair.getPair();
 		Object[] pairArray = pair.toArray();

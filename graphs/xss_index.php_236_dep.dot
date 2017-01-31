@@ -1,9 +1,0 @@
-digraph cfg {
-  label="xss_index.php_236_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugin-editor.php : 262\nVar: _t1_728\nFunc: _main\n"];
-  n2 [shape=box, label="D:\wordpress\wp-admin\plugin-editor.php : 262\nLit:  class=\"highlight\"\n"];
-  n3 [shape=box, label="D:\wordpress\wp-admin\plugin-editor.php : 262\nLit: \n"];
-  n1 -> n2;
-  n1 -> n3;
-}

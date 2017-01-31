@@ -1,5 +1,0 @@
-digraph cfg {
-  label="xss_index.php_152_dep";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\about.php : 186\nLit: https://make.wordpress.org/core/2016/09/09/new-functions-hooks-and-behaviour-for-theme-developers-in-wordpress-4-7/\n"];
-}

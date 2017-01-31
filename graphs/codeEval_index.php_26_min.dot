@@ -1,7 +1,0 @@
-digraph cfg {
-  label="codeEval_index.php_26_min";
-  labelloc=t;
-  n1 [shape=doubleoctagon, label="D:\wordpress\wp-admin\plugins.php : 243\nVar: $plugins\nFunc: _main\n"];
-  n2 [shape=ellipse, label="D:\wordpress\wp-admin\plugins.php : 237\nbuiltin function:\n(array)\n(unmodeled)\n",style=filled];
-  n1 -> n2;
-}
